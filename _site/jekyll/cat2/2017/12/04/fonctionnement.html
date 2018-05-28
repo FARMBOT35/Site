@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Fonctionnement du Farmbot | ESIR Projet Farmbot</title>
+<meta name="generator" content="Jekyll v3.6.2" />
+<meta property="og:title" content="Fonctionnement du Farmbot" />
+<meta name="author" content="Team Farmbot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fonctionnement du Farmbot" />
+<meta property="og:description" content="Fonctionnement du Farmbot" />
+<link rel="canonical" href="http://localhost:4000/jekyll/cat2/2017/12/04/fonctionnement.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/cat2/2017/12/04/fonctionnement.html" />
+<meta property="og:site_name" content="ESIR Projet Farmbot" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-12-04T00:00:00+01:00" />
+<script type="application/ld+json">
+{"description":"Fonctionnement du Farmbot","author":{"@type":"Person","name":"Team Farmbot"},"@type":"BlogPosting","url":"http://localhost:4000/jekyll/cat2/2017/12/04/fonctionnement.html","headline":"Fonctionnement du Farmbot","dateModified":"2017-12-04T00:00:00+01:00","datePublished":"2017-12-04T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/cat2/2017/12/04/fonctionnement.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="ESIR Projet Farmbot" />
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/">ESIR Projet Farmbot</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Fonctionnement du Farmbot</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-12-04T00:00:00+01:00" itemprop="datePublished">
+        
+        Dec 4, 2017
+      </time>
+      
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Team Farmbot</span></span>
+      </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 align="center"> Fonctionnement du Farmbot </h1>
+
+<p> <font color="#996633">
+Le Farmbot est construit en quatre principaux blocs qui sont chacuns reliés entre eux.
+Tout d’abord la <strong>“Farmbot Web application”</strong> [1], qui est l’interface permettant à l’utilisateur d'interagir de différentes façons avec le robot. Ensuite, il y a la <strong>partie Raspberry</strong> [2], directement connecté à la web-App. Elle permet de synchroniser chaque demande, chaque nouvelle séquence et de remonter les informations jusqu’à l’utilisateur. Ce bloc est relié à <strong>l’arduino</strong> [3], ce micro-contrôleur permet de contrôler la partie matérielle et de retourner les opérations. </font>
+</p>
+
+<p><img src="/assets/FonctionnementFarmbot.png" alt="Image" class="center-image" /></p>
+
+<p> <font color="#996633">
+La structure du Farmbot est composé de 4 grandes parties, la dernière est la partie Farmbot. Ce terme défini en faite le robot en lui même, toutes la partie Hardware connecté à l’arduino.
+Nous allons étudier séparément le fonctionnement de chaque blocs.</font>
+</p>
+
+<h1 align="center"> La Web-app </h1>
+
+<p> <font color="#996633">
+Ce que les créateurs du Farmbot appelle la “Web-App” est en réalité l’outil qui sert d’interface entre l’utilisateur et le Farmbot. Cette interface est accessible pour tous les utilisateurs sur le web, sur leurs smartphones et également sur tablette .  La Web-App est de base hébergé sur my.farmbot.io. Cependant, il est possible de l’héberger localement. </font>
+</p>
+<p><img src="/assets/WebApp.png" alt="Image" class="center-image" /></p>
+
+<p> <font color="#996633">
+Cet outil permet de réaliser des tâches tels que le placement des différentes plantes grâce à un système de glisser-déposer. L’utilisateur a un plan de son jardin et une liste des plantes et légumes à sa disposition. Il lui suffit de glisser la plante qu’il souhaite planter à l’emplacement souhaité. Une fois l’application synchronisé avec le Farmbot, celui-ci va automatiquement planter la graine choisie au bon endroit.
+La réalisation d’événement possède des fréquences définies par l’utilisateur. Par exemple, l'utilisateur créé un évènement d’irrigation de son jardin et décide de le mettre en place toutes les semaines le même jour et à la même heur
+</font></p>
+<p> <font color="#996633">
+L’application web permet d’afficher les informations sur le système et l’état de la connexion entre les différentes parties du Farmbot. Par ailleurs, elle sert à initialiser le robot Farmbot.
+On peut définir où sont placées les différentes têtes pour qu’ensuite le bras du Farmbot puisse les utiliser. Une dernière possibilité pour l’utilisateur et de configurer la caméra ainsi que définir la sensibilité à la détection des mauvaises herbes.
+</font></p>
+
+<h1 align="center"> La Raspberry Pi </h1>
+
+<p><img src="/assets/RPI.jpeg" alt="Image" class="center-image" /></p>
+<p><font color="#996633">
+<strong>La Raspberry Pi est un élément essentiel au fonctionnement du Farmbot</strong>. En effet, il fait le lien entre la Web-App et la partie Arduino. C’est lui le cerveau du robot. La connexion entre l’application web et la Raspberry Pi se fait en Ethernet ou en Wifi. Dans les deux cas une passerelle MQTT est utilisée. Le serveur MQTT est appelé “broker”. C’est lui qui va collecter les informations. Les clients MQTT, sont abonnés à des topics. Le serveur peut alors envoyer des informations à tous les clients connectés à un même topic.
+
+Cette connexion permet de transférer les commandes désirées par l’utilisateur lorsqu’il réalise par exemple une séquence de plantation ainsi que de faire remonter des informations sur l’état des capteurs.
+
+
+La Raspberry Pi est connectée au contrôleur Arduino en USB pour lui transmettre les différentes commandes et recevoir des données tels que celles fournies par le capteur de sol.
+</font></p>
+
+<h1 align="center"> L'arduino </h1>
+
+<p><font color="#996633">
+Le contrôleur Arduino ATmega réalise le lien avec la partie mécanique du Farmbot. En fonction des commandes reçues par la Raspberry Pi, il commande les différentes parties du Farmbot. Les moteurs sont dirigés grâce à la carte RAMPS qui est branchée sur l’arduino. Cette carte permet d'interfacer plusieurs fonctionnalités comme la commande de plusieurs moteurs. Le contrôle se fait par envoi d’impulsions électriques, l’Arduino interagit alors avec les moteurs pour déplacer le bras et réaliser l’ensemble des commandes . Pour ce qui est du contrôle et du choix des têtes, cela est réalisé grâce à l’écriture sur les broches (PINs) correspondantes. L’Arduino récolte également les données de ses capteurs pour les transmettre à la Raspberry qui, ensuite, fait remonter les informations à la Web-App via la passerelle MQTT.
+</font></p>
+
+  </div>
+
+  
+
+  <a class="u-url" href="/jekyll/cat2/2017/12/04/fonctionnement.html" hidden></a>
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">ESIR Projet Farmbot</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              ESIR Projet Farmbot
+            
+            </li>
+            
+            <li><a class="u-email" href="mailto:farmboteam@gmail.com">farmboteam@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li>
+  
+  
+  
+  <li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li>
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Le projet des Etudiants en 4eme année option IoT</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

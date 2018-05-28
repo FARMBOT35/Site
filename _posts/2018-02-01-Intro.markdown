@@ -1,0 +1,35 @@
+---
+
+layout: post
+title:  "Introduction"
+date:   2017-12-15
+categories: jekyll Cat2
+author: "Yoann"
+
+---
+
+
+<h1> <font color = "red"> Introduction </font></h1>
+
+![Image](/assets/Farmbot.jpg){: .center-image }
+
+<h2> Le Farmbot </h2>
+<p>
+	Le farmbot  a été lancé en Septembre 2013 aux Etats-Unis par une équipe de Californiens. Ils ont été aidés par toute une communauté d'ingénieurs, de développeurs et de scientifiques qui ont fait de nombreux dons pour que ce projet open-source soit lancé. Le but de ce projet est de fournir un outil permettant à tous de produire sa propre nourriture de façon saine et intelligente.
+</p>
+
+<h2> Le contenu </h2>
+
+<p> Le Farmbot est livré avec toutes les pièces permettant son fonctionnement. Il comprend, tout d’abord, toutes les pièces en métal (le plus souvent en aluminium) en plastique qui constituent la structure du robot. Il y a aussi la partie électronique contenant tous les câblages, les moteurs, l’arduino, le Raspberry pi3 ainsi que les différents supports. Le matériel pour alimenter le robot en eau est aussi livré. De plus, lors de l’achat, nous avons accès à l’application open-source Farmbot.
+</p>
+
+<h2> Les différentes têtes </h2>
+
+<p>Le bras du Farmbot est composé en son extrémité d’une partie fixe où vient se fixer les différentes têtes permettant au bras de réaliser plusieurs actions.  Le bras en fonction des tâches à réaliser choisis la tête. La première tête est utilisé pour le plantage des graines. Il prend le nombre juste de graine grâce à la taille de l’embout et un système à air pour le mouvement. La deuxième tête permet l’arrosage des plantes.  La troisième, elle est équipé d’un capteur d’humidité permettant l’analyse du sol au pied de la plante. La dernière tête est utilisé pour l’enfouissement des mauvaises herbes. La détection des mauvaises herbes est effectué à l’aide d’une caméra positionnée sur le bras.
+</p>
+
+<h2> Le Logiciel et l'application </h2>
+
+<p> Le Farmbot est livré avec une application mobile et une interface web. Pour fonctionner le robot doit être connecté à internet.  Cette partie logicielle a été conçu de façon très intuitive pour que chacun puisse l'utiliser. Le principe de base est de choisir le type de plante que l’on souhaite dans son potager. Une fois sélectionnée, il suffit de glisser la plante sur le plan du potager à l’endroit où on souhaite la planter. Une base de donnée comprenant les caractéristiques de chacunes des plantes (eau, lumière …) est également présente.  L’application permet également de diriger le bras robot individuellement de ce qui à été programmé.
+<p>
+ 

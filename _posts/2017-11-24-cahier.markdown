@@ -1,0 +1,43 @@
+---
+
+layout: post
+title:  "Introduction au cahier des charges"
+date:   2017-11-24 
+categories: jekyll Cat2
+author: "Yoann"
+
+---
+
+![Image](/assets/Famrbot.png){: .center-image }
+
+Pour ce projet, nous avons décidé de réaliser un cahier des charges avec plusieurs niveaux à atteindre en fonction de l’avancement dans le temps. 
+   Dans un premier temps, nous souhaitons rendre totalement autonome le Farmbot. Pour cela plusieurs alternatives s’offrent à nous notamment au niveau de l’apport en électricité. Nous étudions la possibilité d’utiliser principalement l’énergie solaire.
+
+<body style="background-color:#996633;">
+
+
+<ul>
+<li><font color = "FFFFFF">
+<strong>Niveau 1 : </strong>
+Mise en place de l’énergie solaire
+Modification du logiciel avec ajouts de conseils et envoi de suggestions en fonction de la saison. </font>
+</li> 
+
+<li><font color = "FFFFFF" >
+<strong> Niveau 2 : </strong>
+Station météo pour l’optimisation de la gestion de l’eau
+</font></li>
+
+<li><font color = "FFFFFF" >
+<strong> Niveau 3 : </strong>
+
+Gestion efficace des eaux pluviales.
+Outil permettant de retourner la terre
+</font></li> 
+</ul>
+<p><font color = "FFFFFF" >
+Ce cahier des charges est évolutif en fonction des idées qui pourraient survenir durant le projet.
+</font></p>
+
+</body>
+

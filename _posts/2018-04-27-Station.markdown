@@ -1,0 +1,26 @@
+---
+
+layout: post
+title:  "Station météo"
+date:   2018-04-27
+categories: jekyll Cat2
+author: "Yoann"
+
+---
+
+Notre deuxième objectif est de monter la station météo. Pour cela nous avons les outils suivants :
+<ul>
+  <li> Arduino Mega</li>
+  <li> Baromètre Adafruit</li>
+  <li> Sonde d'humidité</li>
+</ul>
+
+Nous avons testé le baromètre Adafruit. Pour cela nous avons le code suivant :
+<img src="/assets/Code_Humidite.PNG" style="width: 500px;"/>
+
+
+Nous avons le résultat suivant:
+
+<img src = "/assets/Humidite.PNG" style=" width: 300px;"/>
+
+Ici le capteur mesure l'humidité par le protocole i2c.

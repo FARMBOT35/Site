@@ -1,0 +1,29 @@
+---
+
+layout: post
+title:  "Outils utilisés"
+date:   2018-04-23
+categories: jekyll Cat2
+author: "Yoann"
+
+---
+
+<h1 font color ="blue"> Langages </h1>
+<ul>
+  <li><h2><font color = "red"> Elixir</font> </h2></li>
+    Un langage de programmation dynamique basé sur la machine Erlang très utilisé
+    pour la programmation machine to machine. le <a href = "https://elixir-lang.org/"> lien ici </a> pour consulter le site officiel. Dans notre farmbot, Elixir est utilisé pour communiquer entre l'arduino et la raspberry.Ce sont des commandes impératives dynamiques qui sont fault-tolerent c'est à dire qu'un bug sur une partie du programme n'entraîne pas l'arrêt de tout le système.
+  <li><h2><font color = "red">Typescript</font> </h2></li>
+    Un langage de programmation orienté objet. Très utilisé pour le développement de serveurs et d'applications web. Le <a href = "https://www.typescriptlang.org/">lien ici </a>. Dans notre farmbot il constitue l'aspect application web. C'est dans ce langage qu'est principalement développée l'application web.
+  <li><h2><font color = "red">React</font> </h2></li>
+    une bibliothèque en Javascript permettant d'implémenter des interfaces web. C'est lui qui permet de créer l'interface Homme machine (IHM). Le <a href = "https://reactjs.org/">lien ici</a>
+    <li><h2><font color = "red">C++</font> </h2></li>
+      Ce langage permet à l'arduino de faire des actions. Les actions sont retranscrites en G-CODES avant d'être exécutées.
+</ul>
+
+<h1 font color = "red"> Station météo </h1>
+<ul>
+  <li><img src = "/assets/Sonde.png" style = "width: 300px;"/> la sonde d'humidité pour mesurer l'humidité de la terre </li>
+  <li><img src = "/assets/anemometre.png" style = "width: 300px;"/>L'anémomètre pour mesurer la force du vent </li>
+  <li><img src = "/assets/barometre.png" style = "width: 300px;"/> Le baromètre pour mesurer la pression de l'air et la température. </li>
+</ul>
